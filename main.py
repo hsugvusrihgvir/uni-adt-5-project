@@ -16,6 +16,7 @@ def assign_responsible(user_name):
 
 # установить дедлайн
 def set_deadline(days):
+    days = int(days)
     return date.today() + timedelta(days=days)
 
 # поменять статус
@@ -26,7 +27,7 @@ def change_status(is_completed):
 
 
 responsible_user = assign_responsible("Даша")
-deadline = set_deadline(3)
+deadline = set_deadline('3')
 status = change_status(False)
 
 
